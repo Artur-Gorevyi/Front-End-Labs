@@ -60,7 +60,8 @@ header{
   border-bottom-style: solid;
 }
 
-@mixin sect {
+.section{
+
   border-radius: 3ch;
   border-style: solid;
   border-width: 2px;
@@ -76,14 +77,9 @@ header{
   img{width: 400px;}
 
   p {font-size: larger;}
-}
-
-.section{
-
-  @include sect;
 
   &__news{
-    @include sect;
+    @extend .section;
     width: 750px;
     text-align: left;
 
@@ -100,7 +96,7 @@ header{
   }
 
   &__table {
-    @include sect;
+    @extend .section;
 
     table, tr, th, td {
       border: 2px solid; 
@@ -113,7 +109,7 @@ header{
   }
 
   &__teachers{
-    @include sect;
+    @extend .section;
 
     ul{
       padding-top: 20px;

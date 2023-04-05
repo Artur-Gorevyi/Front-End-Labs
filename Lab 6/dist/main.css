@@ -54,7 +54,7 @@ header {
   height: 150px;
   border-bottom-style: solid; }
 
-.section {
+.section, .section__news, .section__table, .section__teachers {
   border-radius: 3ch;
   border-style: solid;
   border-width: 2px;
@@ -64,30 +64,15 @@ header {
   margin-left: auto;
   margin-right: auto;
   width: 650px; }
-  .section:hover {
+  .section:hover, .section__news:hover, .section__table:hover, .section__teachers:hover {
     background-color: #1c6aa9; }
-  .section img {
+  .section img, .section__news img, .section__table img, .section__teachers img {
     width: 400px; }
-  .section p {
+  .section p, .section__news p, .section__table p, .section__teachers p {
     font-size: larger; }
   .section__news {
-    border-radius: 3ch;
-    border-style: solid;
-    border-width: 2px;
-    margin: 30px;
-    background-color: #185C94;
-    padding: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 650px;
     width: 750px;
     text-align: left; }
-    .section__news:hover {
-      background-color: #1c6aa9; }
-    .section__news img {
-      width: 400px; }
-    .section__news p {
-      font-size: larger; }
     .section__news img {
       width: 150px; }
     .section__news div {
@@ -95,56 +80,24 @@ header {
       float: left;
       width: 150px;
       text-align: center; }
-  .section__table {
-    border-radius: 3ch;
-    border-style: solid;
-    border-width: 2px;
-    margin: 30px;
-    background-color: #185C94;
-    padding: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 650px; }
-    .section__table:hover {
-      background-color: #1c6aa9; }
-    .section__table img {
-      width: 400px; }
-    .section__table p {
-      font-size: larger; }
-    .section__table table, .section__table tr, .section__table th, .section__table td {
-      border: 2px solid;
-      border-collapse: collapse;
-      padding: 20px;
-      font-size: large; }
-    .section__table tr:nth-child(odd) {
-      background: #1c6aa9; }
-  .section__teachers {
-    border-radius: 3ch;
-    border-style: solid;
-    border-width: 2px;
-    margin: 30px;
-    background-color: #185C94;
-    padding: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 650px; }
-    .section__teachers:hover {
-      background-color: #1c6aa9; }
-    .section__teachers img {
-      width: 400px; }
-    .section__teachers p {
-      font-size: larger; }
-    .section__teachers ul {
-      padding-top: 20px;
-      text-align: center;
-      padding-inline-start: 280px;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-      margin-block-start: 0px;
-      margin-block-end: 0px; }
-    .section__teachers li {
-      font-size: larger;
-      margin: 10px;
-      text-align: left;
-      display: list-item; }
+  .section__table table, .section__table tr, .section__table th, .section__table td {
+    border: 2px solid;
+    border-collapse: collapse;
+    padding: 20px;
+    font-size: large; }
+  .section__table tr:nth-child(odd) {
+    background: #1c6aa9; }
+  .section__teachers ul {
+    padding-top: 20px;
+    text-align: center;
+    padding-inline-start: 280px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px; }
+  .section__teachers li {
+    font-size: larger;
+    margin: 10px;
+    text-align: left;
+    display: list-item; }
 
