@@ -1,0 +1,32 @@
+@media print{
+    body, 
+    main,
+    .section,
+    .section__news,
+    .section__table,
+    .section__teachers{
+        color: #000;
+        background-color: #fff;
+        background-image: none;
+        font-family: 'Times New Roman', Georgia, 'Palatino';
+    }
+
+    .section__table tr:nth-child(odd) {background: #fff;}
+    a{color: #000;}
+
+    body{
+        margin:50px;
+    }
+
+    header{
+        display: none;
+    }
+
+    footer{
+        display: none;
+    }
+    a::after {
+        content: " (" attr(href) ")";
+        font-size: smaller;
+    }
+}

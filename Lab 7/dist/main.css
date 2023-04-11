@@ -1,0 +1,172 @@
+/*!****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/style.scss ***!
+  \****************************************************************************************************************/
+h1 {
+  margin: 30px; }
+
+a {
+  color: white;
+  font-size: 2ch; }
+
+h2 {
+  margin: 0; }
+
+footer {
+  width: 100%;
+  padding-block: 10px;
+  border-top-style: solid; }
+
+body {
+  margin: 0;
+  text-align: center;
+  color: white;
+  background-color: cornflowerblue;
+  background-image: linear-gradient(#042E50, #185C94);
+  font-family: Arial; }
+
+li {
+  display: inline; }
+  li :hover, li a:hover {
+    border-color: white;
+    color: white; }
+  li a {
+    height: 10px;
+    border-radius: 1ch;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #90B9DB;
+    padding: 7px;
+    padding-inline: 14px;
+    font-size: large;
+    margin-inline: 10px;
+    background-color: #042E50;
+    color: #90B9DB;
+    text-decoration: none; }
+
+main {
+  background-image: linear-gradient(#1c6aa9, #042E50);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1px;
+  width: 1000px;
+  border-color: white;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-width: 3px; }
+
+header {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: 140px;
+  border-bottom-style: solid; }
+
+.section, .section__news, .section__table, .section__teachers {
+  border-radius: 3ch;
+  border-style: solid;
+  border-width: 2px;
+  margin: 30px;
+  background-color: #185C94;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 650px; }
+  .section:hover, .section__news:hover, .section__table:hover, .section__teachers:hover {
+    background-color: #1c6aa9; }
+  .section img, .section__news img, .section__table img, .section__teachers img {
+    width: 400px; }
+  .section p, .section__news p, .section__table p, .section__teachers p {
+    font-size: larger; }
+  .section__news {
+    width: 750px;
+    text-align: left; }
+    .section__news img {
+      width: 150px; }
+    .section__news div {
+      padding-right: 20px;
+      float: left;
+      width: 150px;
+      text-align: center; }
+  .section__table table, .section__table tr, .section__table th, .section__table td {
+    border: 2px solid;
+    border-collapse: collapse;
+    padding: 20px;
+    font-size: large; }
+  .section__table tr:nth-child(odd) {
+    background: #1c6aa9; }
+  .section__teachers ul {
+    padding-top: 20px;
+    text-align: center;
+    padding-inline-start: 18vw;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px; }
+  .section__teachers li {
+    font-size: larger;
+    margin: 10px;
+    text-align: left;
+    display: list-item; }
+
+@media screen and (max-height: 1000px) {
+  main {
+    min-width: 500px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+@media screen and (max-width: 1035px) {
+  .section__news {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+@media screen and (max-width: 928px) {
+  .section__table th, .section__table td, .section__table tr {
+    font-size: 2vw;
+    padding-inline: 5%;
+    width: 192px; }
+  .section, .section__news, .section__table, .section__teachers, .section__table, .section__teachers {
+    max-width: 80%;
+    flex-direction: column;
+    align-items: center; } }
+
+@media screen and (max-width: 719px) {
+  header {
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  li {
+    margin-block: 15px; } }
+
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/print.css ***!
+  \***************************************************************************************************************/
+@media print {
+  body,
+  main,
+  .section,
+  .section__news,
+  .section__table,
+  .section__teachers {
+    color: #000;
+    background-color: #fff;
+    background-image: none;
+    font-family: 'Times New Roman', Georgia, 'Palatino'; }
+  .section__table tr:nth-child(odd) {
+    background: #fff; }
+  a {
+    color: #000; }
+  body {
+    margin: 50px; }
+  header {
+    display: none; }
+  footer {
+    display: none; }
+  a::after {
+    content: " (" attr(href) ")";
+    font-size: smaller; } }
+
